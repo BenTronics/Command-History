@@ -1,6 +1,9 @@
 class CMD_History():
     def __init__(self, size):
-        pass
+        self.buf_size = size
+        self.buf_size = [""] * self.buf_size
+        self.w_ptr = 0
+        self.r_ptr = 0
 
     def add_item(self, item):
         pass
