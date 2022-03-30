@@ -26,10 +26,11 @@ class CMD_History():
         self.state = "add_item"
 
     def read_forward(self):
+        r = ""
         if self.state == "add_item":
             return ""
         elif self.state == "forward":
-            if self.r_ptr != self.index_of_last_added:#self.num_of_read_forward < self.num_of_read_back:
+            if self.r_ptr != self.index_of_last_added:
                 self.r_ptr += 1
                 self.num_of_read_forward += 1
                 if self.r_ptr >= self.buf_size:
@@ -43,6 +44,8 @@ class CMD_History():
         return r
     
     def read_backward(self):
+        r = ""
+        tmp_r_ptr = 0
         tmp_r_ptr = self.r_ptr
         if self.state == "add_item":
             pass
