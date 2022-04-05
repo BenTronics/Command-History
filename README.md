@@ -50,6 +50,8 @@ Clear the content of the history and reset all internal states of the class inst
 
 # Example
 
+The follwing example implement a primitiv terminal with tkinter. If you extend the example with the modul pyserial you can use it as a simple serial terminal.
+
 ```python
 from tkinter import*
 from tkinter import ttk
