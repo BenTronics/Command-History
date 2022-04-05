@@ -16,7 +16,7 @@ ___
 
 `add_item(item)`
 
-Add a srtring item to the command history. If the given item is equal to the last stored item it will not be stored in the history.
+Add a srtring item to the command history. If the given item is equal to the last stored item it will not be stored in the history. If the history is full the next item will overwrite the oldest item.
 
 __Parameters__
 item : _str_
