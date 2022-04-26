@@ -6,6 +6,7 @@ logging.basicConfig(filename="test.log", filemode="w", level=logging.DEBUG, form
 
 import sys
 sys.path.append("..")
+sys.path.append("src")
 from src import cmd_history
 
 buf_size = 5
