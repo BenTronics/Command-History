@@ -1,13 +1,14 @@
-from distutils.log import debug
 import unittest
 
-import logging
-logging.basicConfig(filename="test.log", filemode="w", level=logging.DEBUG, format="[{levelname}] {message}", style="{")
 
 import sys
 sys.path.append("..")
 sys.path.append("src")
 from src import cmd_history
+sys.path.clear()
+
+import logging
+logging.basicConfig(filename="test.log", filemode="w", level=logging.DEBUG, format="[{levelname}] {message}", style="{")
 
 buf_size = 5
 
