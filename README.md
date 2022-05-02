@@ -1,13 +1,13 @@
 # Command-History
 
-Command History is a pice of code, wich allow you to extend your apllication with a command History similar to the command history in a bash.
+Command-History is a pice of code, wich allow you to extend your apllication with a command history similar to the command history in a bash.
 If you are planing to use the arrow keys to scroll trough the command history (like it is implementet in a bash) bind the method `read_backward()` with the arrow up key and bind the method `read_forward()` with the arrow down key.
 
 # Documentation
 
 ## Methods
 
-`__init__(size)`
+`CMD_History(size)`
 
 __Parameters__
 size : _int_
